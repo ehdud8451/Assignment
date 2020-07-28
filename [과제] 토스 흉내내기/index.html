@@ -8,24 +8,41 @@
 	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 	<style>
 		* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+		h1 {
+			font-size:3em;
+		}
+		a {
+			text-decoration:none;
+			color:#3060E0;
+			font-weight: bold;
+		}
 		img {
 			margin: 8px;
 		}
-		body > div{
+		main {
+			display: flex;
+			align-items: center;
+		}
+		main > div {
+			float: left;
+			margin: 60px;
+		}
+		#card div {
 			display: flex;
 			margin: 20px 12px;
 			align-items: center;
 			box-sizing: border-box;
 			border-radius: 8px;
 			height: 75px;
+			min-width: 350px;
 			max-width: 500px;
 			box-shadow: 0 30px 60px 12px rgba(0, 0, 33, 0.05), 0 4px 24px 0 rgba(0, 0, 33, 0.05), 0 0 1px 0 rgba(0, 0, 33, 0.09) ;
 		}
-		.bankname {
+		#card .bankname {
 			margin: 8px;
 			width:100%;
 		}
-		.bankname span {
+		#card .bankname span {
 			float: right;
 			margin-right: 8px;
 			font-weight: bold;
@@ -33,25 +50,34 @@
 	</style>
 </head>
 <body>
-	<div>
-		<img src="logo_1.png" alt="">
-		<p class="bankname">국민은행<span>2,134,000원</span></p>
-	</div>
-	<div>
-		<img src="logo_3.png" alt="">
-		<p class="bankname">신한은행<span>1,126,600원</span></p>
-	</div>
-	<div>
-		<img src="logo_4.png" alt="">
-		<p class="bankname">하나은행<span>684,000원</span></p>
-	</div>
-	<div>
-		<img src="logo_5.png" alt="">
-		<p class="bankname">우리은행<span>339,050원</span></p>
-	</div>
-	<div>
-		<img src="logo_2.png" alt="">
-		<p class="bankname">NH 농협은행<span>1,412,000원</span></p>
-	</div>
+	<main>
+		<div id="msg">
+			<h1>계좌관리는 번거롭지만<br>토스는 쉽습니다</h1>
+			<p>간편한 인증 한 번으로 <br>소유한 계좌를 한 번에 관리할 수 있습니다.</p>
+			<a href="#">자세히 알아보기 > </a>
+		</div>
+		<div id="card">
+			<div>
+				<img src="logo_1.png" alt="">
+				<p class="bankname">국민은행<span>2,134,000원</span></p>
+			</div>
+			<div>
+				<img src="logo_3.png" alt="">
+				<p class="bankname">신한은행<span>1,126,600원</span></p>
+			</div>
+			<div>
+				<img src="logo_4.png" alt="">
+				<p class="bankname">하나은행<span>684,000원</span></p>
+			</div>
+			<div>
+				<img src="logo_5.png" alt="">
+				<p class="bankname">우리은행<span>339,050원</span></p>
+			</div>
+			<div>
+				<img src="logo_2.png" alt="">
+				<p class="bankname">NH 농협은행<span>1,412,000원</span></p>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
